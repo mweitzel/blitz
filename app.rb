@@ -1,6 +1,3 @@
-require "uri"
-%w[rubygems sinatra erb].each{ |gem| require gem }
-
 def full_render(page)
 	text = erb page
 	erb :appWrap, :locals => {:body => text }	
